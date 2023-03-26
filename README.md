@@ -3,7 +3,7 @@
 Calculate Calories Diet Application is a user-friendly and comprehensive desktop application that allows individuals to set and track their daily caloric needs, fats, carbs, and proteins. It allows to search and select food items from a database, specify the size of the portion they consume, and view their progress towards their nutritional goals. The application also allows users to edit existing food items in the database and provides statistics for 7 and 30 days. 
 
 <p align="center">
-  <img alt="MainWindow" title="screenshot" src="/screenshots/panel_glowny.jpg" width="450">
+  <img alt="MainWindow" title="screenshot" src="/screenshots/panel_glowny.jpg" width="650">
 </p>
 <p align="center">
   Screenshot from the project.
