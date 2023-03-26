@@ -1,6 +1,6 @@
 <h1 align="center"> Java FX Desktop Diet Application </h1> <br>
 
-Calculate Calories Diet Application is a user-friendly and comprehensive desktop application that allows individuals to set and track their daily caloric needs, fats, carbs, and proteins. It allows to search and select food items from a database, specify the size of the portion they consume, and view their progress towards their nutritional goals. The application also allows users to edit existing food items in the database and provides statistics for 7 and 30 days. 
+Calculate Calories Diet Application is a user-friendly and comprehensive desktop application that allows individuals to set and track their daily caloric needs, fats, carbs, and proteins. It allows them to search and select food items from a database, specify the size of the portion they consume, and view their progress toward their nutritional goals. The application also allows users to edit existing food items in the database and provides statistics for 7 and 30 days. 
 
 <p align="center">
   <img alt="MainWindow" title="screenshot" src="/screenshots/panel_glowny.jpg" width="650">
@@ -22,23 +22,23 @@ Calculate Calories Diet Application is a user-friendly and comprehensive desktop
 * [Screenshots](#screenshots)
 
 # Installation and Usage
-To use the application, download repository and install JavaFX. After installation, launch the application and follow the instructions to create a new user or login to an existing account. Then move futher and start logging your meals and tracking your daily food intake.
+To use the application, download the repository and install JavaFX. After installation, launch the application and follow the instructions to create a new user or login into an existing account. Then move further and start logging your meals and tracking your daily food intake.
 
 # Windows
-The application includes four seperate windows: Create New User Window, Login User, Main , and Statistics.
+The application includes four separate windows: Create New User Window, Login User, Main Panel and Statistics.
 
 ## Create New User Window
-The Create New User Window allows users to enter their information to create an account. Users must provide their name, age, sex, weight, height, workout frequency, and their goal (to maintain, lose, or gain weight). All of the above informations are nedded to calculate their daily caloric needs, fats, carbs, and proteins.
+The Create New User Window allows users to enter their information to create an account. Users must provide their name, age, sex, weight, height, workout frequency, and their goal (to maintain, lose, or gain weight). All of the above pieces of information are needed to calculate their daily caloric needs, fats, carbs, and proteins.
 
 ## Login User Window
-The Login Window allows existing users to log in to their accounts using their username.
+The Login Window allows existing users to log in to their accounts using their usernames.
 
 ## Main Panel Window
 The Main Window is the primary window of the application, where users can log their meals and track their daily food intake. The window is divided into several sections: 
 
-* Top section where user can track their daily caloric, fat, carb, and protein intake and progress towards their goals.
+* Top section is where user can track their daily caloric, fat, carb, and protein intake and progress toward their goals.
 
-* Search bar where user can search thru the database for specific food items. The search bar is designed to be flexible, so the user can enter just part of the name of the food item and still find it.
+* Search bar where users can search thru the database for specific food items. The search bar is designed to be flexible, so the user can enter just part of the name of the food item and still find it.
 
 * Main section including: 
 - List of all products from the database.
