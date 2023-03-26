@@ -1,0 +1,155 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E8A35B4-C6B9-CA64-D976-4730773989A6" name="Zjedzone">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>401CBAFD-A96A-9BFD-FE27-C776BC2DF21F</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id" id="79ACA940-FDAB-F1F9-D4BA-F455CEA3ED2B">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>BFE52483-2BAE-A0CA-86F8-BF8F46B57E75</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idPosilku" id="4C2EB06A-5683-6FE8-9762-11AAD4AA147B">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>B2320688-488F-2165-FA8C-7C25CA1DF9B3</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwaProduktu" id="AA04D5FB-806F-3D33-3A7B-D86AA73E5CF0">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>A30B03AA-E862-CD79-D50B-9A41981E3055</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="wartoscEnergetyczna" id="7369BC5C-EB36-097F-E226-80D2BD1F1ACA">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>8B75F4D0-8F23-AAA9-8754-C2101AE0DAD5</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bialka" id="29365575-04F8-B7F8-494D-3FEA52B12312">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>E76FC288-FDBE-B6D2-B2F8-A4320E1A6C25</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tluszcze" id="A0EF3997-B27B-ED8B-1354-2CD4BE2999E4">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>8250E444-59BA-ECD6-EBB2-654712C90E85</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="weglowodany" id="82CA0877-E498-F3AA-E445-4EFC318B32D0">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>57A2D795-E9FB-4AC3-F98C-FE77860B5751</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ilosc" id="65C3A2EC-1ECD-B768-188B-A0DB3DA98A73">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>06A11757-F4DC-244D-B709-212475222BD5</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="jednostkaMiary" id="2BE6EAB1-A011-76C1-E9A0-0C22A7312E2A">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>05B3C505-638C-CFA6-DF0C-D9F80B1D42FD</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Produkty_idProduktu" id="D3CB9E75-43B5-FF64-B05A-27B86C9B2459">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>3075418F-9142-A0D9-73D6-435003CAD149</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4D010195-C35A-48BC-A4C3-F805AC2EC0FC" referredColumn="A4124870-07FE-7328-99A0-A386F687AF27"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7ABE8B05-E4F7-AB9D-B428-A616A0926151" name="Zjedzone_PK">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>86DD49F5-11D2-15A0-4FC6-9F4B270A4B6F</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="79ACA940-FDAB-F1F9-D4BA-F455CEA3ED2B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D5E5F9D0-E30B-6FDD-E718-E00FDBB0D051" name="Zjedzone_Produkty_FK">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>BC8B2165-449B-7AE8-3244-8DDC95CDB401</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D3CB9E75-43B5-FF64-B05A-27B86C9B2459"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

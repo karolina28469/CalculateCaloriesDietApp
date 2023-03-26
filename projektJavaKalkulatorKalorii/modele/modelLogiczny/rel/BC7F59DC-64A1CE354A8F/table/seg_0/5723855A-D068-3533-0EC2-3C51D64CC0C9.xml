@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5723855A-D068-3533-0EC2-3C51D64CC0C9" name="Posilki">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>C06E0A74-EC35-00A8-74EE-327CF20F0BDB</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idPosilku" id="3C78A50D-BAD0-4F40-DC38-C6B23E7C2108">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>5343B4F8-3077-8DD2-62DB-751128399DC3</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="idUzytkownika" id="41882038-F7E3-86F1-C9A6-08F82E4054BC">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>7C75A91B-E683-9FB2-1391-0276F19EC732</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="godzinaPosilku" id="A9D7D655-FCA4-8DB7-0CFB-0B8878F98123">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>99549664-5F97-1B26-803C-8F5F2052BC18</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT015</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwaPosilku" id="BE0D66E1-D33B-201B-661A-382C509C7847">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>99AFE5CE-AEB0-A2D1-9406-ED9268BBB025</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Uzytkownicy_idUzytkownika" id="D80C8EC3-3464-A692-7176-A2E9386ECA7A">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>A1476ECB-FE52-EADF-41E8-C08AB78CBFD8</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BFF19FC8-9C34-B3F3-A4A7-8405530DE063" referredColumn="50DD9AA5-1350-401F-C1A3-C32B0B77A707"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="32154537-D054-6DD3-051E-F5DE0DE36867" name="Posilki_PK">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>8E59ECAE-8AB4-C6A4-2B93-00DC2AA1A191</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3C78A50D-BAD0-4F40-DC38-C6B23E7C2108"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A57671F-5240-AA36-C947-219386133130" name="Posilki_Uzytkownicy_FK">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>F8750BA8-8A50-02F4-43C7-8514A2AE2076</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D80C8EC3-3464-A692-7176-A2E9386ECA7A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

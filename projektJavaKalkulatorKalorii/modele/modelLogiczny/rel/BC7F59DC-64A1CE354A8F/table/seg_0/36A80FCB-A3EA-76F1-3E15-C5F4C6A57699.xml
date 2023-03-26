@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="36A80FCB-A3EA-76F1-3E15-C5F4C6A57699" name="Relation_5">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Posilki_idPosilku" id="7DC52248-535B-0248-732B-74AB3391A13E">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2BF1D1D3-8AA3-1A21-FCC5-365B0B37CE7D" referredColumn="3C78A50D-BAD0-4F40-DC38-C6B23E7C2108"/>
+</associations>
+</Column>
+<Column name="Zjedzone_id" id="04A023F1-95CA-CE2A-0AD7-F625115D56B0">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="86C307E5-988B-BECA-18BC-08F989E1700B" referredColumn="79ACA940-FDAB-F1F9-D4BA-F455CEA3ED2B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6F2F6E51-D0A4-B2BF-5BB4-2FC52108A217" name="Relation_5_PK">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DC52248-535B-0248-732B-74AB3391A13E"/>
+<colUsage columnID="04A023F1-95CA-CE2A-0AD7-F625115D56B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7716D1AD-525F-BEAC-0F59-C71E3FD1EF0A" name="Relation_5_Posilki_FK">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>31E8A324-AA4B-856A-3401-75F94516DBA4</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7DC52248-535B-0248-732B-74AB3391A13E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BF97B593-96A3-5E93-FAB7-374AA0BFC2DB" name="Relation_5_Zjedzone_FK">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>31E8A324-AA4B-856A-3401-75F94516DBA4</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="04A023F1-95CA-CE2A-0AD7-F625115D56B0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

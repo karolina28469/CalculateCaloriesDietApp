@@ -1,0 +1,116 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2264D90E-BE0B-9F2E-7E3A-A300702C15EE" name="Produkty">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>8ADA00B0-05EE-7090-AFB9-A9A754761F70</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idProduktu" id="A4124870-07FE-7328-99A0-A386F687AF27">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>52306871-B78E-CC5F-D990-8D8F6993C74E</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwaProduktu" id="E3819582-11CE-B3C5-0D0F-24178B284C6A">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>C8A49B1C-7479-D180-56AF-35AD66176AE1</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="wartoscEnergetyczna" id="18236290-AD75-9DE1-06B5-CE5EA8301030">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>165F7E2F-7A08-2955-3BAD-F14E2FA5F283</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bialka" id="1CAF5FD9-A78A-9F3F-795B-6A687EE1B2C1">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>79E901BA-796F-FB42-5B9F-6D960C1280EB</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tluszcze" id="6623D08F-CA7A-4668-577B-F32D4AF3FA5E">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>A939D815-9B68-BB8C-B00C-36450B66332F</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="weglowodany" id="2A250988-AA53-8A2A-A80D-057BEA3A3882">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>FCD0DB92-9D15-A57B-EDEB-0A95AF31F4E9</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ilosc" id="1C336E82-4A22-3D6D-3433-3E88B7D6076E">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>5B0005FE-CFB5-F8E2-9C23-391A7FAC8F7B</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="jednostkaMiary" id="16FAD84E-02C9-48E7-F345-7558C4918D58">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>7559A120-5376-D0EB-E4F6-AD668861797F</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="80AB1F77-89FD-B3E0-8165-B5F346D7098E" name="Produkty_PK">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>F89C92AC-C953-C0A6-A08B-A69D70EB8656</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A4124870-07FE-7328-99A0-A386F687AF27"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

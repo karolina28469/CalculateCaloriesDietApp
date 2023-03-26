@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8ADA00B0-05EE-7090-AFB9-A9A754761F70" name="Produkty">
+<createdBy>kino</createdBy>
+<createdTime>2019-08-29 13:36:07 UTC</createdTime>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<engineerTo>
+<item key="BC7F59DC-82CE-AA9C-5E3A-64A1CE354A8F" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="idProduktu" id="52306871-B78E-CC5F-D990-8D8F6993C74E">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 21:26:29 UTC</createdTime>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<engineerTo>
+<item key="BC7F59DC-82CE-AA9C-5E3A-64A1CE354A8F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nazwaProduktu" id="C8A49B1C-7479-D180-56AF-35AD66176AE1">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 21:27:57 UTC</createdTime>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<engineerTo>
+<item key="BC7F59DC-82CE-AA9C-5E3A-64A1CE354A8F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="wartoscEnergetyczna" id="165F7E2F-7A08-2955-3BAD-F14E2FA5F283">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 21:29:00 UTC</createdTime>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<engineerTo>
+<item key="BC7F59DC-82CE-AA9C-5E3A-64A1CE354A8F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="bialka" id="79E901BA-796F-FB42-5B9F-6D960C1280EB">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 21:29:28 UTC</createdTime>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<engineerTo>
+<item key="BC7F59DC-82CE-AA9C-5E3A-64A1CE354A8F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tluszcze" id="A939D815-9B68-BB8C-B00C-36450B66332F">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 21:29:49 UTC</createdTime>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<engineerTo>
+<item key="BC7F59DC-82CE-AA9C-5E3A-64A1CE354A8F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="weglowodany" id="FCD0DB92-9D15-A57B-EDEB-0A95AF31F4E9">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 21:30:04 UTC</createdTime>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<engineerTo>
+<item key="BC7F59DC-82CE-AA9C-5E3A-64A1CE354A8F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ilosc" id="5B0005FE-CFB5-F8E2-9C23-391A7FAC8F7B">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 21:30:21 UTC</createdTime>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<engineerTo>
+<item key="BC7F59DC-82CE-AA9C-5E3A-64A1CE354A8F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="jednostkaMiary" id="7559A120-5376-D0EB-E4F6-AD668861797F">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 21:30:41 UTC</createdTime>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<engineerTo>
+<item key="BC7F59DC-82CE-AA9C-5E3A-64A1CE354A8F" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F89C92AC-C953-C0A6-A08B-A69D70EB8656" name="Produkty PK">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 21:27:41 UTC</createdTime>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<engineerTo>
+<item key="BC7F59DC-82CE-AA9C-5E3A-64A1CE354A8F" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>52306871-B78E-CC5F-D990-8D8F6993C74E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

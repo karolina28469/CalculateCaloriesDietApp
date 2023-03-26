@@ -1,0 +1,160 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="91A3DE9D-5FC0-BD43-6FB1-EE981EE806F4" name="Uzytkownicy">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>31E36A9B-3EA8-E92D-B42D-4A28AD656238</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="idUzytkownika" id="50DD9AA5-1350-401F-C1A3-C32B0B77A707">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>410FFF30-947E-BC5A-E4DE-34989CE39F11</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nazwaUzytkownika" id="B432153B-AC38-013F-68C5-267AAB0EEE93">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>47BD2F93-3721-1453-155A-51A72B899189</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="plec" id="943623C4-71FE-B2C1-C199-285FA8EB735D">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>EF3651E2-C9BB-DA3D-F759-5E693501B7FD</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="wiek" id="A9DD13AB-F84D-C201-8DA6-A66886B9E9DE">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>77F9FD2E-7511-A5F4-B6EC-ECB6067C35A2</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="waga" id="7943870C-6217-6417-B1E1-916BBFC69A16">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>8B06BAB7-973E-09C8-D07F-61C44DC73A9A</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="wzrost" id="691B3C8C-BF30-246C-3732-3FCDCC4B202F">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>AA98396B-D4DA-CFC9-1389-5A2B4657516C</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="poziomRuchu" id="F3949C05-97EF-E348-F63C-47AECC679D7F">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>FFB26FE8-8CCF-E559-13E1-F4BF88FA56EC</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cel" id="1736A0DA-7207-F1AC-8C97-A819029E6348">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>E05F0299-4F84-B2EE-34A9-58148AC4DBF3</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="wartoscEnergetyczna" id="D1B8B7B3-7557-F785-3272-A0C981F58733">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>B673EAA4-E719-9C97-2A3F-C30A8C225843</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bialka" id="1AD88C35-C1C7-4CA0-1564-18E143E98052">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>65126045-0986-7007-B13A-733ED5B2189E</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tluszcze" id="242DCFDA-E1E3-598E-0171-D6A0BBEF6388">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>DB0D002F-4B23-5DCB-46FE-F11BBD2059A4</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="weglowodany" id="103C5C31-1CD9-2441-C91D-47E4A2D2CA2F">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>6561DC01-0A0E-48F3-A5D6-A83C2AC73050</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BA14D28A-FD3D-34AD-2CB0-DD9D1942352A" name="Uzytkownicy_PK">
+<createdBy>kino</createdBy>
+<createdTime>2019-09-01 22:05:44 UTC</createdTime>
+<generatorID>9E2F431D-F2DA-825A-4696-0538A27A06EC</generatorID>
+<ownerDesignName>modelLogiczny</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50DD9AA5-1350-401F-C1A3-C32B0B77A707"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

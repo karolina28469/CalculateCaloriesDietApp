@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="startBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="1300.0" style="-fx-background-color: #012534;" stylesheets="@dietaAppStyle.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="karolina.AppController">
+   <center>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox>
+               <children>
+                  <TextField fx:id="searchField" prefHeight="37.0" prefWidth="1158.0" promptText="Podaj fragment nazwy" HBox.hgrow="ALWAYS">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="searchBtn" onAction="#searchProduct" prefHeight="37.0" prefWidth="101.0" text="Szukaj" textFill="#fd6f53" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox>
+               <children>
+                  <Label prefHeight="10.0" prefWidth="301.0" text="Lista dostępnych produktów:" textFill="#2eb8a6">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </padding>
+                  </Label>
+                  <Region maxHeight="25.0" prefHeight="25.0" prefWidth="694.0" />
+                  <Label prefHeight="14.0" prefWidth="284.0" text="Lista zjedzonych produktów:" textFill="#2eb8a6">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="15.0" right="15.0" top="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <VBox spacing="4.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="15.0" right="10.0" top="5.0" />
+                     </HBox.margin>
+                     <children>
+                        <ListView fx:id="produktyListView" prefHeight="439.0" prefWidth="284.0" />
+                        <Button fx:id="usunProduktButton" mnemonicParsing="false" onAction="#usunProdukt" text="Usuń produkt" />
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="421.0" prefWidth="677.0" spacing="20.0">
+                     <children>
+                        <VBox>
+                           <children>
+                              <TextField fx:id="nazwaProduktuTextField" alignment="CENTER" prefHeight="25.0" prefWidth="366.0">
+                                 <font>
+                                    <Font name="System Bold" size="18.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets bottom="15.0" left="5.0" right="5.0" top="10.0" />
+                                 </VBox.margin>
+                              </TextField>
+                              <HBox spacing="10.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" minWidth="150.0" prefHeight="27.0" prefWidth="240.0" text="ilość" textFill="#2eb8a6">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="iloscTextField" alignment="CENTER">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label fx:id="iloscLabel" alignment="CENTER_RIGHT" minWidth="100.0" textFill="#2eb8a6">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" spacing="10.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" minWidth="150.0" prefHeight="27.0" prefWidth="240.0" text="wartość energetyczna" textFill="#2eb8a6">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="wartoscEnergetycznaTextField" alignment="CENTER">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label fx:id="wartoscEnergetycznaLabel" alignment="CENTER_RIGHT" minWidth="100.0" textFill="#2eb8a6">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="35.0" spacing="10.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" minWidth="150.0" prefWidth="240.0" text="białka" textFill="#2eb8a6">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="bialkaTextField" alignment="CENTER">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label fx:id="bialkaLabel" alignment="CENTER_RIGHT" minWidth="100.0" textFill="#2eb8a6">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="60.0" spacing="10.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" minWidth="150.0" prefWidth="240.0" text="tłuszcze" textFill="#2eb8a6">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="tluszczeTextField" alignment="CENTER">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label fx:id="tluszczeLabel" alignment="CENTER_RIGHT" minWidth="100.0" textFill="#2eb8a6">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="85.0" spacing="10.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" minWidth="150.0" prefWidth="240.0" text="węglowodany" textFill="#2eb8a6">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="weglowodanyTextField" alignment="CENTER">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label fx:id="weglowodanyLabel" alignment="CENTER_RIGHT" minWidth="100.0" textFill="#2eb8a6">
+                                       <font>
+                                          <Font size="20.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox>
+                           <children>
+                              <HBox spacing="10.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" minWidth="150.0" prefWidth="240.0" text="porcja/ opakowanie" textFill="#2eb8a6">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="porcjaTextField" alignment="CENTER">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label fx:id="jednostkaMiaryLabel" textFill="#2eb8a6">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox spacing="10.0">
+                                 <children>
+                                    <Label alignment="CENTER_RIGHT" minWidth="150.0" prefHeight="27.0" prefWidth="223.0" text="ilość" textFill="#2eb8a6">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="*" textFill="#2eb8a6">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="razyTextField" alignment="CENTER" prefHeight="25.0" prefWidth="62.0">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                    <Label prefHeight="27.0" prefWidth="1.0" text="/" textFill="#2eb8a6">
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="podzielTextField" alignment="CENTER" prefHeight="25.0" prefWidth="58.0">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </TextField>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="dodajProduktButton" mnemonicParsing="false" onAction="#dodajProdukt" text="&lt;&lt;&lt;  Nowy produkt" />
+                              <Button fx:id="edytujProduktButton" mnemonicParsing="false" onAction="#edytujProdukty" text="Edytuj" />
+                              <Button fx:id="button" onAction="#dodajZjedzonyProdukt" prefHeight="36.0" prefWidth="214.0" text="ZJADŁEM  &gt;&gt;&gt;" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox spacing="4.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="10.0" right="15.0" top="5.0" />
+                     </HBox.margin>
+                     <children>
+                        <ListView fx:id="posilkiListView" />
+                        <ListView fx:id="zjedzoneListView" prefWidth="290.0" />
+                        <Button fx:id="usunZjedzonyButton" mnemonicParsing="false" onAction="#usunZjedzonyProdukt" text="Usuń produkt" />
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox prefWidth="1000.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="statusLabel" alignment="CENTER" prefHeight="0.0" prefWidth="1197.0" text="OK" textFill="WHITE">
+               <padding>
+                  <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+               </padding>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="dzisTextField" prefHeight="25.0" prefWidth="122.0" />
+         </children></HBox>
+   </bottom>
+   <top>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <HBox spacing="10.0">
+               <children>
+                  <ImageView fitHeight="37.0" fitWidth="153.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@logo.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <Label prefHeight="45.0" prefWidth="49.0" text="Cześć," textFill="#2eb8a6">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nazwaUzytkownikaLabel" layoutX="73.0" layoutY="15.0" prefHeight="45.0" prefWidth="937.0" textFill="#2eb8a6">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="StatystykiButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#przejdzDoPaneluStatystyk" text="Statystyki" />
+                  <Button fx:id="wylogujButton" layoutX="85.0" layoutY="10.0" mnemonicParsing="false" onAction="#cofnijDoPaneluStartowego" text="Wyloguj" />
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox>
+               <children>
+                  <VBox prefHeight="70.0" prefWidth="160.0" spacing="5.0">
+                     <children>
+                        <Label fx:id="dzienTygodniaLabel" alignment="CENTER" prefHeight="32.0" prefWidth="147.0" text="Dzien " textAlignment="CENTER" textFill="#2eb8a6">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="dataLabel" alignment="CENTER" prefHeight="17.0" prefWidth="148.0" text="Data" textFill="#2eb8a6">
+                           <font>
+                              <Font size="18.0" />
+                           </font></Label>
+                     </children>
+                  </VBox>
+                  <Label alignment="CENTER" prefHeight="65.0" prefWidth="936.0" text="LICZNIK KALORII" textFill="#2eb8a6">
+                     <font>
+                        <Font name="System Bold" size="30.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                     <contextMenu>
+                        <ContextMenu>
+                           <items>
+                              <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                           </items>
+                        </ContextMenu>
+                     </contextMenu>
+                  </Label>
+                  <Region prefHeight="70.0" prefWidth="133.0" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </padding>
+            </HBox>
+            <HBox spacing="50.0">
+               <children>
+                  <VBox prefWidth="300.0">
+                     <children>
+                        <Label text="Kalorie" textFill="#2eb8a6">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <HBox spacing="5.0">
+                           <children>
+                              <Label fx:id="zjedzoneKalorieLabel" layoutX="10.0" layoutY="10.0" text="Label" textFill="#2eb8a6">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font></Label>
+                              <Label layoutX="10.0" layoutY="10.0" text="/" textFill="#2eb8a6">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font></Label>
+                              <Label fx:id="maxKaloriiLabel" layoutX="66.0" layoutY="10.0" text="2000" textFill="#2eb8a6">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Label>
+                              <Label layoutX="80.0" layoutY="10.0" text="kcal" textFill="#2eb8a6">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font></Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </padding>
+                        </HBox>
+                        <ProgressBar fx:id="kalorieProgressBar" prefHeight="18.0" prefWidth="230.0" progress="0.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="93.0" layoutY="10.0" prefWidth="300.0">
+                     <children>
+                        <Label text="Białka" textFill="#2eb8a6">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <HBox spacing="5.0">
+                           <children>
+                              <Label fx:id="zjedzoneBialkaLabel" layoutX="10.0" layoutY="10.0" text="Label" textFill="#2eb8a6">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font></Label>
+                              <Label layoutX="10.0" layoutY="10.0" text="/" textFill="#2eb8a6">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font></Label>
+                              <Label fx:id="maxBialkaLabel" layoutX="66.0" layoutY="10.0" text="70" textFill="#2eb8a6">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Label>
+                              <Label layoutX="80.0" layoutY="10.0" text="g" textFill="#2eb8a6">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font></Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </padding>
+                        </HBox>
+                        <ProgressBar fx:id="bialkaProgressBar" prefWidth="230.0" progress="0.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="293.0" layoutY="10.0" prefWidth="300.0">
+                     <children>
+                        <Label text="Tłuszcze" textFill="#2eb8a6">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <HBox spacing="5.0">
+                           <children>
+                              <Label fx:id="zjedzoneTluszczeLabel" layoutX="10.0" layoutY="10.0" text="Label" textFill="#2eb8a6">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font></Label>
+                              <Label layoutX="10.0" layoutY="10.0" text="/" textFill="#2eb8a6">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font></Label>
+                              <Label fx:id="maxTluszczyLabel" layoutX="66.0" layoutY="10.0" text="60" textFill="#2eb8a6">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Label>
+                              <Label layoutX="80.0" layoutY="10.0" text="g" textFill="#2eb8a6">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font></Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </padding>
+                        </HBox>
+                        <ProgressBar fx:id="tluszczeProgressBar" prefWidth="230.0" progress="0.0" />
+                     </children>
+                  </VBox>
+                  <VBox layoutX="493.0" layoutY="10.0" prefWidth="300.0">
+                     <children>
+                        <Label text="Węglowodany" textFill="#2eb8a6">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Label>
+                        <HBox spacing="5.0">
+                           <children>
+                              <Label fx:id="zjedzoneWeglowodanyLabel" layoutX="10.0" layoutY="10.0" text="Label" textFill="#2eb8a6">
+                                 <font>
+                                    <Font name="System Bold" size="20.0" />
+                                 </font></Label>
+                              <Label layoutX="10.0" layoutY="10.0" text="/" textFill="#2eb8a6">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font></Label>
+                              <Label fx:id="maxWeglowodanowLabel" layoutX="66.0" layoutY="10.0" text="300" textFill="#2eb8a6">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font></Label>
+                              <Label layoutX="80.0" layoutY="10.0" text="g" textFill="#2eb8a6">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font></Label>
+                           </children>
+                           <padding>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </padding>
+                        </HBox>
+                        <ProgressBar fx:id="weglowodanyProgressBar" prefWidth="230.0" progress="0.0" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </HBox>
+            <TextField disable="true" maxHeight="1.0">
+               <font>
+                  <Font size="1.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="20.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+         </children>
+      </VBox>
+   </top>
+</BorderPane>
